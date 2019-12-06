@@ -77,11 +77,11 @@ function elementsFilter(firstarray) {
 				thirdarray.push(secondarray[i].childNodes[j]);
 			}
 		}
-        if (secondarray[i].nodeName == "IMG") {
-            if (secondarray[i].alt != "") {
-                thirdarray.push(secondarray[i].alt);
-            }
-        }
+		if (secondarray[i].nodeName == "IMG") {
+		    if (secondarray[i].alt != "") {
+			thirdarray.push(secondarray[i].alt);
+		    }
+		}
 	}
 	for (var i = 0; i < firstarray.length; i++) {
 		if (firstarray[i].scrollWidth > firstarray[i].offsetWidth) {
