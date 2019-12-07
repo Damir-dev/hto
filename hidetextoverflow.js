@@ -131,7 +131,6 @@ function hideText(fourtharray, firstarray, htoLineCounter, crop) {
 	var d = 0;
 	var triggerOfFinishWord = 0;
 	var lineCounter = 1;
-	var tempLineCounter = 0;
 	for (var j = 0; j < firstarray.length; j++) {
 		if (firstarray[j].scrollWidth > firstarray[j].offsetWidth) {
 			counterElementsWO++;
