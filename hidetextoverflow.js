@@ -64,12 +64,12 @@ function elementsFilter(firstarray) {
 	var newCounterElementsWO = 0;
 	var tempType = "";
 	for (var i = 0; i < firstarray.length; i++) {
-        if (firstarray[i].nodeName == "A" || firstarray[i].nodeName == "EM" || firstarray[i].nodeName == "Q" || firstarray[i].nodeName == "SPAN") {
-            secondarray.push(firstarray[i]);
-        }
-        else if (firstarray[i].scrollWidth > firstarray[i].offsetWidth) {
-            secondarray.push(firstarray[i]);
-        }
+		if (firstarray[i].nodeName == "A" || firstarray[i].nodeName == "EM" || firstarray[i].nodeName == "Q" || firstarray[i].nodeName == "SPAN") {
+		    secondarray.push(firstarray[i]);
+		}
+		else if (firstarray[i].scrollWidth > firstarray[i].offsetWidth) {
+		    secondarray.push(firstarray[i]);
+		}
 	}
 	for (var i = 0; i < secondarray.length; i++) {
 		if (secondarray[i].childNodes.length > 0) {
@@ -77,11 +77,11 @@ function elementsFilter(firstarray) {
 				thirdarray.push(secondarray[i].childNodes[j]);
 			}
 		}
-        if (secondarray[i].nodeName == "IMG") {
-            if (secondarray[i].alt != "") {
-                thirdarray.push(secondarray[i].alt);
-            }
-        }
+		if (secondarray[i].nodeName == "IMG") {
+		    if (secondarray[i].alt != "") {
+			thirdarray.push(secondarray[i].alt);
+		    }
+		}
 	}
 	for (var i = 0; i < firstarray.length; i++) {
 		if (firstarray[i].scrollWidth > firstarray[i].offsetWidth) {
