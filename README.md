@@ -6,3 +6,5 @@ Hide Text Overflow my own algorythm developed on JavaScript. This algorythm can 
 Hide Text Overflow includes Load DOM To Array function. This function get object then load object and all his childrens to array.
 
 Full description, price and rights on https://www.vk.com/d.mukhametgaleev
+
+How it works - https://www.youtube.com/watch?v=SyVbwDGs5Ho
